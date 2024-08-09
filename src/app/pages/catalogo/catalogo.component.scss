@@ -1,0 +1,63 @@
+.catalogo {
+  padding: 20px;
+  background-color: #ffffff; /* Fundo branco para contrastar com o fundo da página */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.catalogo h2 {
+  color: #61a7f1; /* Azul escuro */
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comprar-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61a7f1;
+  color: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Alinhar produtos ao centro */
+}
+
+.produto {
+  border: 1px solid #e0e0e0; /* Borda cinza clara */
+  border-radius: 8px;
+  padding: 15px;
+  width: calc(25% - 20px); /* Ajuste para 4 produtos por linha */
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f9f9f9; /* Fundo leve para os produtos */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.produto:hover {
+  transform: translateY(-5px); /* Efeito de elevação */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+.produto img {
+  max-width: 100%;
+  height: 85%;
+  border-radius: 8px;
+}
+
+.produto h3 {
+  margin: 15px 0 10px;
+  color: #000000; /* Azul claro */
+  font-size: 1.5em;
+}
+
+.produto p {
+  margin: 5px 0;
+  color: #555; /* Texto de preço e descrição mais suave */
+}
