@@ -15,5 +15,4 @@ export class ProdutoDetalhesComponent implements OnInit {
     this.produtoId = this.route.snapshot.paramMap.get('id');
     // Aqui você deve buscar os detalhes do produto com base no produtoId
     // Por exemplo, usando um serviço que faz uma chamada HTTP
-  }
-}
+  }}

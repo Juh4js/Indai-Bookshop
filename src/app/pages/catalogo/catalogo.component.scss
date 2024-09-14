@@ -6,7 +6,7 @@
 }
 
 .catalogo h2 {
-  color: #61a7f1; /* Azul escuro */
+  color: #61a7f1; /* Azul */
   font-size: 2em;
   margin-bottom: 20px;
   text-align: center;
@@ -16,7 +16,7 @@
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #61a7f1;
+  background-color: #61a7f1; 
   color: white;
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -25,7 +25,7 @@
 .produtos {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   justify-content: center; /* Alinhar produtos ao centro */
 }
 
@@ -53,7 +53,7 @@
 
 .produto h3 {
   margin: 15px 0 10px;
-  color: #000000; /* Azul claro */
+  color: #000000;
   font-size: 1.5em;
 }
 
