@@ -1,0 +1,83 @@
+$form-bg-color: #f9f9fb;
+$primary-color: #61a7f1;
+$input-bg-color: #fff;
+$border-color: #ccc;
+$text-color: #333;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $form-bg-color;
+  display: flex;
+  justify-content: flex-end; /* Alinha o formulário à direita */
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0 20px; /* Adiciona um pouco de padding para não ficar grudado na borda */
+}
+
+.form-container {
+  background-color: $input-bg-color;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.table {
+  background-color: $input-bg-color;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: $text-color;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    background-color: $input-bg-color;
+    font-size: 14px;
+  }
+
+  input[type="date"] {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  input[type="submit"],
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+

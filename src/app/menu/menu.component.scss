@@ -1,104 +1,95 @@
-/* Estilos básicos do menu lateral */
 .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #61a7f1; /* Azul */
-    padding-top: 20px;
-    padding-left: 0; /* Remove o padding da margem esquerda */
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-item {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px; /* Remove o padding lateral para encostar na margem esquerda */
-    font-size: 18px;
-    transition: transform 0.2s ease, background-color 0.3s ease;
-    font-weight: 500;
-  }
-  
-  .menu-item:hover {
-    transform: translateY(-5px); /* Levanta o botão 5px ao passar o cursor */
-  }
-  
-  summary {
-    cursor: pointer;
-    font-size: 18px;
-    padding: 10px; /* Remove o padding lateral para encostar na margem esquerda */
-    color: #ffffff;
-    font-weight: 500;
-    list-style: none;  /* Remove o símbolo de lista */
-    min-height: 50px;  /* Mantém o tamanho fixo */
-    transition: transform 0.2s ease;
-    display: flex;
-    align-items: center; /* Alinha verticalmente os itens */
-  }
-  
-  summary:hover {
-    transform: translateY(-5px); /* Levanta o botão 5px ao passar o cursor */
-  }
-  
-  .arrow {
-    margin-right: 10px; /* Espaço entre a flecha e o texto */
-    font-size: 18px; /* Tamanho da flecha */
-    transition: transform 0.2s ease;
-  }
-  
-  details[open] .arrow {
-    transform: rotate(90deg); /* Rotaciona a flecha ao expandir */
-  }
-  
-  details {
-    padding: 0;
-  }
-  
-  details a {
-    padding-left: 20px; /* Ajusta o padding lateral dos subitens */
-  }
-  
-  details[open] summary {
-    background-color: #376494; /* Altera a cor ao expandir */
-  }
-  
-  details[open] {
-    padding-bottom: 10px;
-  }
-  
-  h2 {
-    margin: 20px 0;
-    color: #ffffff;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-  }
-  
-  /* Estilo para o conteúdo da página, para ajustar à presença da sidebar */
-  body {
-    margin-left: 250px;
-    font-family: 'Arial', sans-serif;
-  }
-  
-/* Centralizar o contêiner da imagem */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #61a7f1; 
+  padding-top: 20px;
+  padding-left: 0; 
+  font-family: 'Arial', sans-serif;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 18px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); 
+}
+
+summary {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  list-style: none; 
+  min-height: 50px; 
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center; 
+}
+
+summary:hover {
+  transform: translateY(-5px); 
+}
+
+.arrow {
+  margin-right: 10px; 
+  font-size: 18px; 
+  transition: transform 0.2s ease;
+}
+
+details[open] .arrow {
+  transform: rotate(90deg); 
+}
+
+details {
+  padding: 0;
+}
+
+details a {
+  padding-left: 20px; 
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+details[open] summary {
+  background-color: #376494; 
+}
+
+details[open] {
+  padding-bottom: 10px;
+}
+
+body {
+  margin-left: 250px;
+  font-family: 'Arial', sans-serif;
+}
+
 .image-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ajuste conforme necessário */
+  padding: 10px; 
 }
 
-/* Garantir que a imagem não ultrapasse o tamanho da tela */
 .image-container img {
-  max-width: 100%;
-  height: auto;
+  width: 220px; 
+  height: auto; 
 }
-

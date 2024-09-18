@@ -1,31 +1,36 @@
 <nav class="sidebar">
-    <h2>Menu</h2>
-    <ul class="menu">
   
-      <li>
-        <details>
-          <summary><span class="arrow">▶</span> Login</summary>
-          <a href="http://localhost:4200/login" class="menu-item">Fazer Login</a>
-        </details>
-      </li>
-  
-      <li>
-        <details>
-          <summary><span class="arrow">▶</span> Produtos</summary>
-          <a href="http://localhost:4200/catalogo" class="menu-item">Cadastrar produtos</a>
-          <a href="http://localhost:4200/catalogo" class="menu-item">Movimentar produtos</a>
-        </details>
-      </li>
-  
-      <li>
-        <details>
-          <summary><span class="arrow">▶</span> Administração</summary>
-          <a href="#" class="menu-item">Cadastrar usuário</a>
-        </details>
-      </li>
-    </ul>
-  </nav>
-  
-    <div class="image-container">
-        <img src="public/INDAIABOOKSHOP.png" alt="Logo">
-    </div>
+  <ul class="menu">
+    <li class="home-item">
+      <div class="image-container">
+        <img src="/assets/INDAIABOOKSHOP.png" alt="Logo">
+      </div>
+      <details>
+        <summary><span class="arrow">▶</span> Home</summary>
+        <a routerLink="#" class="menu-item">...</a>
+      </details>
+    </li>
+
+    <li>
+      <details>
+        <summary><span class="arrow">▶</span> Login</summary>
+        <a routerLink="/login" class="menu-item">Fazer Login</a>
+      </details>
+    </li>
+
+    <li>
+      <details>
+        <summary><span class="arrow">▶</span> Produtos</summary>
+        <a routerLink="/catalogo" class="menu-item">Cadastrar produtos</a>
+        <a routerLink="/catalogo" class="menu-item">Movimentar produtos</a>
+      </details>
+    </li>
+
+    <li>
+      <details>
+        <summary><span class="arrow">▶</span> Administração</summary>
+        <a routerLink="/cad-usuario" class="menu-item">Cadastrar usuário</a>
+      </details>
+    </li>
+  </ul>
+</nav>
