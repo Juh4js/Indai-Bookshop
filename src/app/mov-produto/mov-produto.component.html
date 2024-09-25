@@ -1,0 +1,67 @@
+<app-menu></app-menu>
+
+<form>
+    <h2>Movimentação de Produtos</h2>
+
+    <div>
+      <label for="id">ID:</label>
+      <input type="number" id="id" name="id">
+    </div>
+    
+    <div>
+      <label for="dataMovimentacao">Data de Movimentação:</label>
+      <input type="date" id="dataMovimentacao" name="dataMovimentacao">
+    </div>
+    
+    <div>
+      <label for="produto">Produto:</label>
+      <select id="produto" name="produto">
+        <option value="1">Produto 1</option>
+        <option value="2">Produto 2</option>
+        <option value="3">Produto 3</option>
+      </select>
+    </div>
+    
+    <div>
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" name="quantidade">
+    </div>
+    
+    <div>
+      <label for="tipo">Tipo de Movimentação:</label>
+      <select id="tipo" name="tipo">
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+      </select>
+    </div>
+    
+    <button type="submit">Salvar</button>
+  </form>
+
+  <h3 class="mt-5"> Relatório de Produto</h3>
+    <table class="table table-striped mt-4">
+      <thead>
+        <tr>
+          <th>Ação</th>
+          <th>ID</th>
+          <th>Data</th>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Tipo</th>
+          <th>Usuário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <button class="bnt bnt-warning btn-sm">Editar</button>
+            <button class="bnt bnt-warning btn-sm">Excluir</button>
+          </td>
+          <td>1</td>
+          <td>04/10/2024</td>
+          <td>1</td>
+          <td>1</td>
+          <td>Livro</td>
+          <td>  Alexsander</td>
+        </tr>
+  
