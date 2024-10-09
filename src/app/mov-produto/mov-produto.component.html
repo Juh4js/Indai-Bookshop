@@ -1,21 +1,21 @@
 <app-menu></app-menu>
 
-<form>
+<form [formGroup]="formulario">
     <h2>Movimentação de Produtos</h2>
 
     <div>
       <label for="id">ID:</label>
-      <input type="number" id="id" name="id">
+      <input type="number" id="id" formControlName="id">
     </div>
     
     <div>
       <label for="dataMovimentacao">Data de Movimentação:</label>
-      <input type="date" id="dataMovimentacao" name="dataMovimentacao">
+      <input type="date" id="dataMovimentacao" formControlName="dataMovimentacao">
     </div>
     
     <div>
       <label for="produto">Produto:</label>
-      <select id="produto" name="produto">
+      <select id="produto" formControlName="produto">
         <option value="1">Produto 1</option>
         <option value="2">Produto 2</option>
         <option value="3">Produto 3</option>
@@ -24,18 +24,19 @@
     
     <div>
       <label for="quantidade">Quantidade:</label>
-      <input type="number" id="quantidade" name="quantidade">
+      <input type="number" id="quantidade" formControlName="quantidade">
     </div>
     
     <div>
       <label for="tipo">Tipo de Movimentação:</label>
-      <select id="tipo" name="tipo">
+      <select id="tipo" formControlName="tipo">
         <option value="entrada">Entrada</option>
         <option value="saida">Saída</option>
       </select>
     </div>
     
-    <button type="submit">Salvar</button>
+    <button (click)="onSave()">Salvar</button>
+    <button (click)="onCancelar()">Cancelar</button>
   </form>
 
   <h3 class="mt-5"> Relatório de Produto</h3>
